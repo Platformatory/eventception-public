@@ -5,10 +5,28 @@
 }
 
 .contact-box {
-	@extend %flexbox;
-	@include flex-flow(wrap);
-	max-width: 750px;
+	@media (min-width: 1300px){
+		max-width: 1140px !important;
+	}
+	@media (min-width: 992px) {
+		max-width: 960px ;
+	}
+	@media (max-width: 768px){
+		max-width: 740px ;
+	}
+	@media (max-width: 576px)
+	 {
+		max-width: 566px ;
+	}
+	display: grid;
+	
 	margin: 0 auto;
+	@media (max-width:580px) {
+		margin: 0px 10px;
+	}
+	@media (max-width:985px) {
+		margin: 0px 20px;
+	}
 
 	form {
 		width: 100%
@@ -19,14 +37,84 @@
 	}
 
 	.contact-form, .contact-details  {
-		@media #{$desktop} {
-			-webkit-flex: 1;
-			flex: 1;
-		}
-		margin: 0 30px;
+		padding: 30px 30px;
+		
 	}
-
+	.contact-form{
+		background: #ececec42	;
+	}
 	.contact-details {
 		font-size: .9em;
 	}
+	@media #{$desktop} {
+		grid-template-columns:  repeat(2, minmax(0, 1fr));
+	}
+	
 }
+
+.contact-header{
+	display: flex;
+	justify-content: center;
+	p{
+		@media (min-width: 1300px){
+			max-width: 1140px !important;
+		}
+		@media (min-width: 992px) {
+			max-width: 960px ;
+		}
+		@media (max-width: 768px){
+			max-width: 740px ;
+		}
+		@media (max-width: 576px)
+		 {
+			max-width: 566px ;
+		}
+		padding: 0 20px;
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+
+.contact-details {
+	background: #f0f0f0;;
+	color: #666;
+	padding: 15px;
+	h2{
+		text-align: start;
+	}
+	@media (max-width:$lg) {
+	  padding: 20px 40px;
+	}
+	p {
+	  font-size: 14px;
+	//   line-height: 22px;
+	  color: #676767;
+	  padding-bottom: 20px;
+	  @media (max-width:$lg) {
+		max-width: 50%;
+	  }
+	}
+  a {
+	color: #868585;
+	}
+	.email-block {
+	  background-color: $brand-color;
+	  padding: 10px;
+	  border-radius: 4px;
+	  span {
+		color:white;
+		margin-right: 10px;
+	  }
+	  a {
+		color: #ffffff;
+		}
+	}
+	.address-india-title{
+		margin-top: 25px;
+	}
+  }
+  
+  .line-seperator{
+	border-bottom: dashed 2px #6b6b6b;
+  }
