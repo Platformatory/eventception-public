@@ -1,62 +1,56 @@
 ---
 title: Pricing
-heading: Find the perfect plan for your business
-description: All plans include our award winning sales optimization solution to track your sales in real time.
+heading: Tailored Event Plans for Your Success
+description: Discover the ideal Eventception plan for your needs. From our free Starter plan for small projects to the scalable Standard plan, and customizable Enterprise solutions, we have you covered. Find the perfect fit and elevate your event-driven application with Eventception.
 pricing_table:
-  - name: Basic
-    color: "#8e8e8e"
+  - name: Starter
+    color: "#6d849a"
     features:
-      - text: $25 per month
+      - text: Free (up to 100K API calls/month)
         highlight: true
-      - text: Up to 5 users
+      - text: Ideal for startups and small projects
         highlight: false
-      - text: Basic lead scoring
+      - text: Basic features included
         highlight: false
-      - text: CRM
+      - text: Access to community support
         highlight: false
-      - text: Basic reporting
-        highlight: false
-      - text: Sales map
+      - text: Sign up for free
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=basic
-      text: Get started
-  - name: Pro
-    color: "#4a4a4a"
+      link: /contact
+      text: Book a call with us
+  - name: Standard
+    color: "#49749e"
     features:
-      - text: $99 per month
+      - text: $0.01 per event (10M events/month)
         highlight: true
-      - text: Everything in Basic
+      - text: Great for growing businesses
         highlight: false
-      - text: Up to 25 users
+      - text: 10M events per month at $0.01 each
         highlight: false
-      - text: Advanced lead scoring
+      - text: Monthly usage reports
         highlight: false
-      - text: Pipeline management
-        highlight: false
-      - text: Advanced reporting
+      - text: Customizable API analytics
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=pro
-      text: Get started
-  - name: Professional
-    color: "#000000"
+      link: /contact
+      text: Book a call with us
+  - name: Enterprise
+    color: "#0c64a7"
     features:
-      - text: $299 per month
+      - text: Contact Us
         highlight: true
-      - text: Everything in Basic and Pro
+      - text: Tailored solutions for large enterprises
         highlight: false
-      - text: Up to 100 users
+      - text: Custom pricing based on your needs
         highlight: false
-      - text: Campaign builder
+      - text: Dedicated account manager
         highlight: false
-      - text: Machine learning
-        highlight: false
-      - text: Calendar
+      - text: Advanced analytics and reporting
         highlight: false
     call_to_action:
-      link: http://mysite.com?plan=professional
-      text: Get started
+      link: /contact
+      text: Book a call with us
 faq:
   - question: What types of payment do you accept?
     answer: Credit cards including MasterCard, Visa or American Express.
@@ -67,31 +61,40 @@ faq:
   - question: Questions?
     answer: Contact us for any further questions at <a href="#">john@business.com</a>.
 ---
-<div class="plans">
-	{% for plan in page.pricing_table %}
-		<ul class="plan">
-			<li style="background: {{ plan.color }}">
-				<h3>{{ plan.name }}</h3>
-			</li>
-			{% for feature in plan.features %}
-				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
-			{% endfor %}
 
-			{% if plan.call_to_action %}
-				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
-			{% endif %}
-		</ul>
-	{% endfor %}
+<div class="plans">
+  {% for plan in page.pricing_table %}
+  <ul class="plan">
+    <li style="background: {{ plan.color }}">
+      <h3>{{ plan.name }}</h3>
+    </li>
+    {% for feature in plan.features %}
+    <li {% if feature.highlight %} class="highlighted" {% endif %}>
+      {{ feature.text }}
+    </li>
+    {% endfor %} {% if plan.call_to_action %}
+    <li class="pricing-cta">
+      <div class="button">
+        <a
+          style="background: {{ plan.color }}"
+          href="{{ plan.call_to_action.link }}"
+          >{{ plan.call_to_action.text }} &rarr;</a
+        >
+      </div>
+    </li>
+    {% endif %}
+  </ul>
+  {% endfor %}
 </div>
 
-{% if page.faq %}
-	<h2>Pricing FAQ</h2>
-	<dl class="faq">
-		{% for item in page.faq %}
-			<div>
-				<dt>{{ item.question }}</dt>
-				<dd>{{ item.answer }}</dd>
-			</div>
-		{% endfor %}
-	</dl>
-{% endif %}
+<!-- {% if page.faq %}
+<h2>Pricing FAQ</h2>
+<dl class="faq">
+  {% for item in page.faq %}
+  <div>
+    <dt>{{ item.question }}</dt>
+    <dd>{{ item.answer }}</dd>
+  </div>
+  {% endfor %}
+</dl>
+{% endif %} -->
