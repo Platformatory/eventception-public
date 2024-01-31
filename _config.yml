@@ -4,6 +4,7 @@
 title: Eventception
 url: "https://eventception.io"
 baseurl:
+auth0url: https://eventception.us.auth0.com/authorize?client_id=2WBhaF0aChVNyqvJxgEoDis15arMKx1o&response_type=token id_token&redirect_uri=https://app.eventception.io&scope=openid profile email&nonce=lw3fq3sd2
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:

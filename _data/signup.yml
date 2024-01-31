@@ -1,0 +1,12 @@
+- name: Google
+  connection: google-oauth2
+  class: google-btn
+  icon: google-logo
+- name: GitHub
+  connection: github
+  class: github-btn
+  icon: github-logo
+- name: LinkedIn
+  connection: linkedin
+  class: linkedin-btn
+  icon: linkedin-logo

@@ -1,0 +1,86 @@
+---
+class: signup-container
+---
+
+<div class="signup-main">
+  <div class="signup-details">
+    <div class="signup-context">
+      <h2>Revolutionize Your Events with Eventception</h2>
+      <p class="app-intro">
+        Welcome to Eventception, where event-driven applications reach new
+        heights. Sign up now to harness the power of seamless event processing,
+        compatibility with major gateways, and dynamic event streams.
+      </p>
+      <div class="social-buttons-mobile">
+        <h3 class="signup-title">Sign Up</h3>
+        {% for connection in site.data.signup %}
+        <a
+          href="{{site.auth0url}}&connection={{connection.connection}}"
+          class="{{connection.class}}"
+        >
+          <img
+            class="connection-logo"
+            alt="{{connection.name}} logo"
+            src="{{site.baseurl}}/images/{{connection.icon}}.png"
+          />
+          Signup with {{connection.name}}
+        </a>
+        {% endfor %}
+      </div>
+      <h3>Why Eventception?</h3>
+      <p>
+        <strong>Gateway Compatibility:</strong> Seamlessly integrate with
+        popular gateways like AWS, Kong, Azure, Apigee, Istio, and MuleSoft for
+        unparalleled flexibility.
+      </p>
+      <p>
+        <strong>Event Processor Creation: </strong> Build event processors
+        effortlessly with our "Visual Spec Builder" or upload advanced API
+        specs, offering you unparalleled control.
+      </p>
+      <p>
+        <strong>Versatile Event Consumption:</strong> Direct your event streams
+        to Webhooks, Connectors, Kafka, Http Rest, and more, ensuring your
+        events reach the right destinations.
+      </p>
+      <h3>What You Get:</h3>
+      <p>
+        <strong>Free Starter Plan:</strong> Perfect for small projects, offering
+        up to 100K events/month.
+      </p>
+      <p>
+        <strong>Standard Plan:</strong> Scale confidently with 10M events/month
+        at just $0.01 per event. Enjoy priority support and monthly usage
+        reports.
+      </p>
+      <p>
+        <strong>Enterprise Solutions:</strong> Tailored plans for large
+        enterprises. Contact us to discuss custom pricing, dedicated support,
+        and advanced analytics.
+      </p>
+      <h3>Join the Event Revolution - Sign Up Now!</h3>
+      <p>
+        Ready to revolutionize your event-driven applications? Sign up for
+        Eventception today. Maximize flexibility, scalability, and analytics to
+        elevate your app experiences. Your journey to event success starts here!
+      </p>
+    </div>
+    <!-- <img src="{{site.baseurl}}/images/apinomy.png" alt="apinomy logo" /> -->
+  </div>
+  <div class="social-buttons">
+    <h3 class="signup-title">Sign Up</h3>
+    {% for connection in site.data.signup %}
+    <a
+      href="{{site.auth0url}}&connection={{connection.connection}}"
+      class="{{connection.class}}"
+    >
+      <img
+        class="connection-logo"
+        alt="{{connection.name}} logo"
+        src="{{site.baseurl}}/images/{{connection.icon}}.png"
+      />
+      Signup with {{connection.name}}
+    </a>
+    {% endfor %}
+  </div>
+</div>
