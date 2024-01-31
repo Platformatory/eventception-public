@@ -18,7 +18,7 @@
   link: https://app.eventception.io/
   new_window: true
   highlight: false
-- name: Sign Up
-  link: https://app.eventception.io/
-  new_window: true
-  highlight: true
+# - name: Sign Up
+#   link: https://app.eventception.io/
+#   new_window: true
+#   highlight: true
