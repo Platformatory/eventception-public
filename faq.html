@@ -1,0 +1,28 @@
+---
+title: Eventception FAQ - Clearing Your Path to Event Success
+<!-- description: >-
+  We've built an amazing, fantastic team of developers, marketers, designers and
+  sales people. -->
+faq:
+  - question: What is Eventception?
+    answer: Eventception is a platform focused on enabling seamless event-driven applications. It provides flexible event plans, scalable solutions, and advanced features to enhance your application experiences.
+  - question: What Plans Does Eventception Offer?
+    answer: Eventception offers a Free Starter Plan with up to 100K events per month, a Standard Plan for scalable solutions at $0.01 per event, and custom Enterprise Solutions for large enterprises.
+  - question: How Do I Reach Eventception Support?
+    answer: Contact our support team through the Contact Us page or by emailing <a href="mailto:hello@platformatory.com">hello@platformatory.com</a>. We're here to help with any questions or assistance you may need.
+  - question: Is Eventception Suitable for Small Projects?
+    answer: Absolutely! Our Free Starter Plan is perfect for small projects, allowing you to explore our capabilities and grow your applications seamlessly.
+  - question: Can I Customize Webhooks in Eventception?
+    answer: Yes, Eventception provides customizable webhooks, allowing you to set up and manage event-driven workflows that suit your application's needs.
+---
+
+{% if page.faq %}
+<div class="faq-grid">
+  {% for item in page.faq %}
+  <div class="faq-item">
+    <h3>{{ item.question }}</h3>
+    <p>{{ item.answer }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

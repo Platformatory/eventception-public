@@ -172,3 +172,30 @@ blockquote:before {
 	}
 
 }
+
+
+.faq-grid {
+	
+	display: grid;
+	justify-content: center;
+	gap: 20px;
+	color: #666;
+	.faq-item {
+		max-width: 880px;
+		padding: 20px;
+		font-size: 16px;
+		border-bottom: 1px solid #ddd;
+		h3 {
+			font-weight: bold;
+			margin: 0 0 10px 0;
+		}
+		p {
+		    font-size: 16px;
+			margin: 0;
+		}
+		a{
+			color: #003b91;
+		}
+	  }
+  }
+  
