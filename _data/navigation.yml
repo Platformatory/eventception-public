@@ -14,11 +14,11 @@
   link: /contact/
   new_window: false
   highlight: false
-- name: Login
-  link: https://app.eventception.io/
-  new_window: true
-  highlight: false
+# - name: Login
+#   link: /
+#   new_window: true
+#   highlight: false
 # - name: Sign Up
-#   link: https://app.eventception.io/
+#   link: /
 #   new_window: true
 #   highlight: true

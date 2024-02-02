@@ -9,8 +9,8 @@
       link: /contact/
 - links:
     - name: Login
-      link: https://app.eventception.io/
-      new_window: true
+      link: /contact/
+      new_window: false
     - name: Sign Up
       link: /contact/
       new_window: false
