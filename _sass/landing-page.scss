@@ -175,3 +175,226 @@
     font-size: 36px;
     color: #fff;
 }
+
+.section{
+	.section-title{
+		padding: 15px 0px;
+	}
+	.section-description{
+		font-size: 1.2rem;
+	}
+	@media (min-width:998px) {
+		.demo-video-section{
+			height: 580px !important;
+		}
+	}
+	@media (max-width:998px) {
+		.demo-video-section{	
+			height: 460px ;
+		}	
+	}
+	@media (min-width:445px) {
+		.demo-video-section{
+			height: 340px;
+		}	
+	}
+	@media (max-width:445px) {
+		.demo-video-section{
+			height: 280px !important;
+		}	
+	}
+
+	
+}
+
+.build-container{
+	background-color: white;
+	padding: 20px 0;
+	background-image: linear-gradient(to top right, #127c744f, white);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	.partner-content{
+		background-color: #ecf1e6d6;
+		padding: 24px 15px;
+		h3{
+			text-align: center;
+			padding: 10px 0px;
+		}
+		p{
+			font-size: 1rem;
+			padding: 0 10px;
+		}
+	}
+	.partner-container {
+		background: white;
+		color: #fff;
+		padding: 24px 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		.cta-buttons{
+			width: 100%;
+			margin: 10px 0px;
+			a {
+				padding: 10px;
+				text-align: center;
+				display: inherit;
+				border-radius: 4px;
+				color:white !important;
+			}
+		}
+		@media (min-width:985px) {
+		  padding: 20px 40px;
+		  .partner-logo{
+			height: 36px;
+		  }
+		  .plf-logo{
+			height: 50px;
+		  }
+		}
+		p {
+		  line-height: 22px;
+		  font-size: 1rem;
+		  color: #222222;
+		}
+	  a {
+		color: #969696;
+		}
+		.email-block {
+		  background-color: #72b6de;
+		  padding: 10px;
+		  border-radius: 4px;
+		  span {
+			margin-right: 10px;
+		  }
+		  a {
+			color: #ffffff;
+			}
+		}
+	  }
+}
+
+
+.intro {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: transparent;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@media (max-width:445px){
+	  padding-top: 10rem;
+	  
+	}
+	@media (min-width:445px) {
+	  padding-top: 60px;
+	  padding-bottom: 60px;
+	  h1{
+		font-size: 32px;
+	}
+	}
+	background-color: white;
+	overflow: hidden;
+	background-color: linear-gradient(to left, #d5fdff 0%, #e8f5ff 100%);
+	@media (min-width:619px) {
+	h1{
+		font-size: 52px;
+	}
+	  padding-top: 140px;
+	  padding-bottom: 140px;
+	}
+	@media (min-width: 998px) {
+		min-height: 240px;
+		h1{
+			min-height: 100px;
+		}
+	}
+	
+	.intro-content{
+	  background-color: rgba(10, 24, 39, .9);
+	  padding: 10px;
+	  p,pre{
+		color: #ffffff;
+	  }
+	}
+	h1 {
+	  color:#ffffff;
+	  font-weight: bold;
+	  line-height: 1.2;
+	}
+  
+	h2 {
+	  width: 80%;
+	  font-size: 1.2rem;
+	  line-height: 1.4;
+	  margin-bottom: 30px;
+	  color: white;
+	}
+	p {
+	  font-size: 1rem;
+	  font-weight: light;
+	  line-height: 1.5;
+	  opacity: .7;
+	}
+	.intro-content-block h1{
+	  color: white;
+	}
+  }
+
+.get-start{
+	margin: 40px 0;
+	text-align: center;
+	border-radius: 4px;
+	background-color: rgb(5, 5, 77);
+	padding: 10px;
+	h1{
+		padding: 20px 10px;
+	}
+	p{
+		margin: 0;
+	}
+	h1,p{
+		color: white;
+	}
+	a{	
+		display: inline-flex;
+		height: fit-content;
+		margin: 20px 0;
+		border: none;
+		color: white;
+		font-size: 20px;
+		padding: 16px 24px;
+		font-weight: bold;
+		border-radius: 4px;
+		background-color: #0a773ae6;
+		&:hover{
+			background-color: white;
+			color: #0a773ae6;
+		}
+	}
+}	
+
+  .partner-logo,.plf-logo{
+	padding: 0 15px;
+  }
+  
+  .partner-logo{
+	height: 28px;
+  }
+  .plf-logo{
+	height: 40px;
+  }
+
+
+  @media (max-width: 440px) {
+    .partner-logo{
+      height: 24px;
+    }
+    .plf-logo{
+      height: 36px;
+    }
+  }

@@ -14,4 +14,10 @@
 @import "navigation";
 @import "footer";
 @import "cloudcannon";
-@import "signup"
+@import "signup";
+
+// Bootstrap
+@import 'bootstrap-variables';
+@import 'bootstrap/bootstrap-reboot';
+@import 'bootstrap/bootstrap-grid';
+@import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
