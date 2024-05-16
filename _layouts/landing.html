@@ -129,9 +129,17 @@ bodyClass: page-contact
     <center>
       <h1 class="section-title">{{ section.title }}</h1>
     </center>
+    {% endif %}
     {% if section.description %}
     <p class="section-description">{{section.description}}</p>
     {% endif%}
+    {% if section.segments %}
+    <ul>
+      {% for segment in section.segments %}
+        <li>{{ segment }}</li>
+      {% endfor %}
+    </ul>
+    
     {% endif %} {% if section.layout == 'right' or section.layout == 'left' %}
     <p class="section-text-caption">{{ section.caption }}</p>
     {% endif %}
@@ -159,9 +167,7 @@ bodyClass: page-contact
     <div class="get-start container">
       <h1>Get Started Today</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus quia
-        reiciendis architecto ratione, unde perferendis sunt eos, illum ea omnis
-        sit tempore sed molestiae obcaecati deserunt quam. Itaque, nam repellat.
+        Unlock the power of real-time event streaming with Eventception & Confluent—seamless integration, real-time insights, no code changes needed. Start your journey towards digital excellence today!
       </p>
       <a href="/contact">Contact US</a>
     </div>
