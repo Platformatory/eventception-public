@@ -22,7 +22,8 @@ sections:
       - "Business “Domain” Events"
       - "RESTful Service & RPC Events"
       - "Network & Infrastructure Events"
-  - description: "It becomes important to capture these and share them with the right stakeholders for processing and deriving insights from them. For example, in an e-commerce product, when an order is placed, multiple entities, such as shipping, payment, billing, BI, etc., are interested in the event. In an API context, this typically involves the service performing a dual write to the database and the message broker, or the same changes being passed through to the message broker using an approach like change data capture."
+  - description: "It becomes important to capture these and share them with the right stakeholders for processing and deriving insights from them. For example, in an e-commerce product, when an order is placed, multiple entities, such as shipping, payment, billing, BI, etc., are interested in the event."
+  - description: "In an API context, this typically involves the service performing a dual write to the database and the message broker, or the same changes being passed through to the message broker using an approach like change data capture."
   - description: "These approaches however suffer from one of the two limitations"
     segments:
       - "1. Dual writes are complicated to achieve and require sensitive code changes. Many times, these maybe legacy applications or outside our domain of control"
