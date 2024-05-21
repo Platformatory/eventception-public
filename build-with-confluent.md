@@ -22,7 +22,7 @@ sections:
       - "Business “Domain” Events"
       - "RESTful Service & RPC Events"
       - "Network & Infrastructure Events"
-  - description: "It becomes important to capture these and share them with the right stakeholders. In an API context, this typically involves the service performing a dual write to the database and the message broker, or the same changes being passed through to the message broker using an approach like change data capture."
+  - description: "It becomes important to capture these and share them with the right stakeholders for processing and deriving insights from them. For example, in an e-commerce product, when an order is placed, multiple entities, such as shipping, payment, billing, BI, etc., are interested in the event. In an API context, this typically involves the service performing a dual write to the database and the message broker, or the same changes being passed through to the message broker using an approach like change data capture."
   - description: "These approaches however suffer from one of the two limitations"
     segments:
       - "1. Dual writes are complicated to achieve and require sensitive code changes. Many times, these maybe legacy applications or outside our domain of control"
@@ -38,9 +38,10 @@ sections:
   - title: "Building with Confluent"
     description: "Naturally, Confluent makes a great choice for our streaming platform. Here's how -"
     segments:
-      - "Eventception can support “Bring your own Kafka” - for the primary destination.  → Can support Confluent Cloud, Confluent Platform and edge Kafka clusters"
-      - "Our processing DSL is built on top of Flink"
-      - "We support Kafka sink connectors to send processed events to destinations → can also leverage Confluent Cloud fully managed connectors"
+      - "Eventception can support “Bring your own Kafka” - for the primary destination.  → Can support <b>Confluent Cloud, Confluent Platform</b> and edge Kafka clusters"
+      - "Our processing DSL is built on top of <b>Apache Flink</b>"
+      - Events can be generated in various data formats - JSON, Avro with <b>Confluent Schema Registry</b>
+      - "We support Kafka sink connectors to send processed events to destinations → can also leverage <b>Confluent Cloud fully managed connectors</b>"
   - title: "A peek under the hood"
     image_url: "/images/landing/eventception-arch.svg"
   - title: "In action"
