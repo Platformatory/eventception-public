@@ -39,9 +39,10 @@ sections:
   - title: "Building with Confluent"
     description: "Naturally, Confluent makes a great choice for our streaming platform. Here's how -"
     segments:
-      - "Eventception can support “Bring your own Kafka” - for the primary destination.  → Can support Confluent Cloud, Confluent Platform and edge Kafka clusters"
-      - "Our processing DSL is built on top of Flink"
-      - "We support Kafka sink connectors to send processed events to destinations → can also leverage Confluent Cloud fully managed connectors"
+      - "Eventception can support “Bring your own Kafka” - for the primary destination.  → Can support <b>Confluent Cloud, Confluent Platform</b> and edge Kafka clusters"
+      - "Our processing DSL is built on top of <b>Apache Flink</b>"
+      - Events can be generated in various data formats - JSON, Avro with <b>Confluent Schema Registry</b>
+      - "We support Kafka sink connectors to send processed events to destinations → can also leverage <b>Confluent Cloud fully managed connectors</b>"
     ctas:
       - title: "Confluent Connectors"
         img: "/images/landing/icon-connector.png"
