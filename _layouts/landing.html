@@ -154,6 +154,16 @@ bodyClass: page-contact
       allowfullscreen
     ></iframe>
     {% endif %}
+    {% if section.ctas %}
+    <div class="section-ctas">
+    {% for cta_section in section.ctas %}
+    <a href="{{ cta_section.url}}" target="_blank" rel="noopener noreferrer">
+      <img class="section-cta-icon" src="{{cta_section.img}}" alt="">
+      <span class="section-cta-title">{{ cta_section.title }}</span>
+    </a>
+    {% endfor %}
+  </div>
+    {% endif %}
     {% if section.image_url %}
     <img src="{{ section.image_url }}" alt="Section Image" />
     {% endif %}

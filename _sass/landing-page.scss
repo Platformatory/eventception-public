@@ -213,7 +213,32 @@
 			height: 280px !important;
 		}	
 	}
-
+	.section-ctas{
+		display: flex;
+		gap:10px;
+		>a{
+			color: white;
+			padding: 20px 10px;
+			background-color: #80906efa;
+			border-radius: 12px;
+			gap:10px;
+			width: 25%;
+			display: flex;
+			// align-items: center;
+			.section-cta-title{
+				font-size: 22px;
+			}
+			.section-cta-icon{
+				width: 40px;
+				height: 40px;
+			
+			}
+			&:hover{
+				background-color: #667950fa;
+				text-decoration: none;
+			}
+		}
+	}
 	
 }
 
