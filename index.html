@@ -28,12 +28,12 @@ description:
   <section>
     <div class="container flex">
       <div class="text editable">
-        <h2>Your API transactions, as an event log</h2>
+        <h2>Event-carried State Transfer</h2>
         <p>
           Eventception integrates with API data planes: Kong, Apigee, AWS API
           Gateway, Azure API Management, Envoy and more (or you can use ours or
           bring your own) and turns these into event sources. We automatically
-          process change events and produce summaries of what changed.
+          process CDC style change events scoped to resources with configurable keys.
         </p>
       </div>
       <div class="image">
@@ -52,7 +52,7 @@ description:
         <h2>Process and synthesize events</h2>
         <p>
           Our interactive processing UI and OpenAPI3-embedded DSL allows you
-          express events mapped to RESTful transactions
+          to filter and transform your REST payloads into expressive events.
         </p>
       </div>
       <div class="image">
@@ -71,7 +71,7 @@ description:
         <h2>Consume events with ease</h2>
         <p>
           Use Kafka or webhooks to consume the synthesized events. Choose from
-          connectors to send it to other operationao or analytical destinations.
+          connectors to send it to other operational or analytical destinations. You can also bootstrap long-running event sagas and workflows.
         </p>
       </div>
       <div class="image">
