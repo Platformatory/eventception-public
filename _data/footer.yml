@@ -1,12 +1,12 @@
 - links:
-    - name: Pricing
-      link: /pricing/
+#    - name: Pricing
+#      link: /pricing/
     # - name: Blog
     #   link: /blog/
-    - name: FAQ
-      link: /faq/
-    - name: Contact
-      link: /contact/
+#    - name: FAQ
+#      link: /faq/
+#    - name: Contact
+#      link: /contact/
 # - links:
 #     - name: Login
 #       link: /contact/
